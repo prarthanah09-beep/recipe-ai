@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Recipe Maker</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:#2c3e50;
+            color:white;
+            padding:15px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h2{
+            font-size:28px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:17px;
+            transition:.3s;
+        }
+
+        nav ul li a:hover{
+            color:#00ff99;
+        }
+
+        /* Container */
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:30px 0;
+        }
+
+        /* Footer */
+
+        footer{
+            margin-top:50px;
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        footer p{
+            font-size:15px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+            }
+
+            nav ul{
+                margin-top:10px;
+                flex-direction:column;
+                align-items:center;
+            }
+
+            nav ul li{
+                margin:10px 0;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <h2>🍳 AI Recipe Maker</h2>
+
+        <ul>
+
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+
+            <li>
+                <a href="{% url 'home' %}">Generate Recipe</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main Content -->
+
+    <div class="container">
+
+
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 AI Recipe Maker | Built with Django & AI
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
+
